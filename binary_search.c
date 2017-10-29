@@ -1,7 +1,7 @@
 #include<stdio.h>
 void bsort(int a[],int);
 void bsearch(int a[],int,int,int);
-void main(){
+int main(){
 	int n,a[50],i,search;
 	printf("enter the no. of elements: \n");
 	scanf("%d",&n);
@@ -12,6 +12,7 @@ void main(){
 	scanf("%d",&search);
 	bsort(a,n);
 	bsearch(a,0,n-1,search);
+	return 0
 }
 void bsort(int a[],int n){
 	int i,j,temp;
